@@ -1,0 +1,16 @@
+{
+  "name": "bootstrap-tut-calculus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage":"https://Hex1729.github.io/calculus-course-website",
+  "dependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}
