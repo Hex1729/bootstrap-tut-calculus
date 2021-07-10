@@ -16,15 +16,15 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
-    <title>Calculus Crash Course</title>
+    <title>Calculus Course</title>
   </head>
 
   <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-sm bg-dark py-3 fixed-top">
+    <nav class="navbar navbar-dark navbar-expand-sm bg-dark py-3 fixed-top">
       <div class="container">
-        <a href="#" class="navbar-brand">Calculus Crash Course</a>
+        <a href="#" class="navbar-brand">Calculus Course</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -36,10 +36,10 @@
         <div class="collapse navbar-collapse" id="navmenu">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a href="#learn" class="nav-link">Learn</a>
+              <a href="#contents" class="nav-link">Contents</a>
             </li>
             <li class="nav-item">
-              <a href="#contents" class="nav-link">Contents</a>
+              <a href="#resources" class="nav-link">Resources</a>
             </li>
             <li class="nav-item">
               <a href="#teachers" class="nav-link">Teachers</a>
@@ -62,7 +62,7 @@
               Start learning calculus from the best people to have ever taught
               the subject. Get a grasp of all the concepts and hone your knowledge everywhere.
             </p>
-            <button class="btn btn-primary btn-lg">Start Learning</button>
+            <button class="btn btn-primary btn-lg" onclick="window.location.href='#contents'">Start Learning</button>
           </div>
           <img
             class="img-fluid w-60 d-none d-md-block"
@@ -74,7 +74,7 @@
     </section>
 
     <!-- Newsletter -->
-    <section id="rickroll" class="bg-success text-light p-5">
+    <section id="rickroll" class="bg-success text-light p-3 mt-4">
       <div class="container">
         <div class="d-md-flex justify-content-between align-items-center">
           <h3 class="mb-3 mb-md-0">Shortcut to learn calculus instantly!</h3>
@@ -90,7 +90,7 @@
               class="btn btn-lg bg-warning btn-outline-light text-light"
               type="button"
               id="button-addon2"
-              href="https://www.thisworldthesedays.com/instant-calculus-master.html"
+              onclick="location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'"
             >
               Let's Go!
             </button>
@@ -99,9 +99,152 @@
       </div>
     </section>
 
-    <!-- Boxes -->
-    <section id="learn" class="p-5">
+
+    <!-- Contents -->
+    <section id="contents" class="p-3 bg-light mt-2">
+        <div class="container">
+            <h2>Course Contents</h2>
+
+            <div class="accordion-flush " id="accordionExample">
+                
+                <div class="accordion-item my-3">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed bg-success text-light btn-lg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                      <strong>Precalculus</strong>
+                    </button>
+                  </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p><strong>The foundation for studying calculus</strong></p>
+                            <ul class="list-group">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Set Theory and Functions
+                                <span class="badge bg-primary rounded-pill">6</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Vectors and Matrices
+                                <span class="badge bg-primary rounded-pill">4</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Trigonometry
+                                <span class="badge bg-primary rounded-pill">4</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Sequences and Series
+                                <span class="badge bg-primary rounded-pill">5</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Conic Sections
+                                <span class="badge bg-primary rounded-pill">7</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                <div class="accordion-item my-3">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed bg-warning text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      <strong>Differential Calculus</strong>
+                    </button>
+                  </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse " aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p><strong>The gateway to the realm of calculus</strong></p>
+                            <ul class="list-group">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Limits
+                                <span class="badge bg-primary rounded-pill">4</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Derivatives
+                                <span class="badge bg-primary rounded-pill">7</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Continuity and Differentiability
+                                <span class="badge bg-primary rounded-pill">5</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Advanced Methods of Derivatives
+                                <span class="badge bg-primary rounded-pill">6</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Applications of Derivatives
+                                <span class="badge bg-primary rounded-pill">10</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                <div class="accordion-item my-3">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed bg-info text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      <strong>Integral Calculus</strong>
+                    </button>
+                  </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse " aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p><strong>The most applicable domain of calculus but in single-variable</strong></p>
+                            <ul class="list-group">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Integrals
+                                <span class="badge bg-primary rounded-pill">6</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Integration Techniques
+                                <span class="badge bg-primary rounded-pill">9</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Applications of Integrals
+                                <span class="badge bg-primary rounded-pill">10</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Intro to Differential Equations
+                                <span class="badge bg-primary rounded-pill">4</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item my-3">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed bg-danger text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      <strong>Multivariable Calculus</strong>
+                    </button>
+                  </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse " aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p><strong>The universe of multivariables inside which the planet of single variable calculus resides.</strong></p>
+                            <ul class="list-group">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Multivariable Functions
+                                <span class="badge bg-primary rounded-pill">8</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Derivatives of Multivariable Functions
+                                <span class="badge bg-primary rounded-pill">12</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Applications of Multivariable Derivatives
+                                <span class="badge bg-primary rounded-pill">6</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Integration of Multivariable Functions
+                                <span class="badge bg-primary rounded-pill">14</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Green's, Stokes' and Divergence Theorems
+                                <span class="badge bg-primary rounded-pill">7</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources -->
+    <section id="resources" class="p-4 pt-1">
       <div class="container">
+        <h2 class="py-2">Resources</h2>
         <div class="row text-center g-4">
           <div class="col-sm">
             <div class="btn card bg-info text-light">
@@ -144,150 +287,10 @@
       </div>
     </section>
 
-    <!-- Contents -->
-    <section class="p-5 bg-light">
-        <div class="container">
-            <h2>Course Contents</h2>
-
-            <div class="accordion-flush " id="accordionExample">
-                
-                <div class="accordion-item my-3">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button collapsed bg-success text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                      Precalculus
-                    </button>
-                  </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <p><strong>The foundation for studying calculus</strong></p>
-                            <ul class="list-group">
-                                <li class="list-group-item d-flex justify-content-between align-items-center">
-                                Set Theory and Functions
-                                <span class="badge bg-primary rounded-pill">6</span>
-                                </li>
-                                <li class="list-group-item d-flex justify-content-between align-items-center">
-                                Vectors and Matrices
-                                <span class="badge bg-primary rounded-pill">4</span>
-                                </li>
-                                <li class="list-group-item d-flex justify-content-between align-items-center">
-                                Trigonometry
-                                <span class="badge bg-primary rounded-pill">4</span>
-                                </li>
-                                <li class="list-group-item d-flex justify-content-between align-items-center">
-                                Sequences and Series
-                                <span class="badge bg-primary rounded-pill">5</span>
-                                </li>
-                                <li class="list-group-item d-flex justify-content-between align-items-center">
-                                Conic Sections
-                                <span class="badge bg-primary rounded-pill">7</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                <div class="accordion-item my-3">
-                  <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed bg-warning text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Differential Calculus
-                    </button>
-                  </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse " aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <p><strong>The gateway to the realm of calculus</strong></p>
-                            <ul class="list-group">
-                                <li class="list-group-item d-flex justify-content-between align-items-center">
-                                Limits
-                                <span class="badge bg-primary rounded-pill">4</span>
-                                </li>
-                                <li class="list-group-item d-flex justify-content-between align-items-center">
-                                Derivatives
-                                <span class="badge bg-primary rounded-pill">7</span>
-                                </li>
-                                <li class="list-group-item d-flex justify-content-between align-items-center">
-                                Continuity and Differentiability
-                                <span class="badge bg-primary rounded-pill">5</span>
-                                </li>
-                                <li class="list-group-item d-flex justify-content-between align-items-center">
-                                Advanced Methods of Derivatives
-                                <span class="badge bg-primary rounded-pill">6</span>
-                                </li>
-                                <li class="list-group-item d-flex justify-content-between align-items-center">
-                                Applications of Derivatives
-                                <span class="badge bg-primary rounded-pill">10</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                <div class="accordion-item my-3">
-                  <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed bg-info text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      Integral Calculus
-                    </button>
-                  </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse " aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <p><strong>The most applicable domain of calculus but in single-variable</strong></p>
-                            <ul class="list-group">
-                                <li class="list-group-item d-flex justify-content-between align-items-center">
-                                Integrals
-                                <span class="badge bg-primary rounded-pill">6</span>
-                                </li>
-                                <li class="list-group-item d-flex justify-content-between align-items-center">
-                                Integration Techniques
-                                <span class="badge bg-primary rounded-pill">9</span>
-                                </li>
-                                <li class="list-group-item d-flex justify-content-between align-items-center">
-                                Applications of Integrals
-                                <span class="badge bg-primary rounded-pill">10</span>
-                                </li>
-                                <li class="list-group-item d-flex justify-content-between align-items-center">
-                                Intro to Differential Equations
-                                <span class="badge bg-primary rounded-pill">4</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item my-3">
-                  <h2 class="accordion-header" id="headingFour">
-                    <button class="accordion-button collapsed bg-danger text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                      Multivariable Calculus
-                    </button>
-                  </h2>
-                    <div id="collapseFour" class="accordion-collapse collapse " aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <p><strong>The universe of multivariables inside which the planet of single variable calculus resides.</strong></p>
-                            <ul class="list-group">
-                                <li class="list-group-item d-flex justify-content-between align-items-center">
-                                Multivariable Functions
-                                <span class="badge bg-primary rounded-pill">8</span>
-                                </li>
-                                <li class="list-group-item d-flex justify-content-between align-items-center">
-                                Derivatives of Multivariable Functions
-                                <span class="badge bg-primary rounded-pill">12</span>
-                                </li>
-                                <li class="list-group-item d-flex justify-content-between align-items-center">
-                                Applications of Multivariable Derivatives
-                                <span class="badge bg-primary rounded-pill">6</span>
-                                </li>
-                                <li class="list-group-item d-flex justify-content-between align-items-center">
-                                Integration of Multivariable Functions
-                                <span class="badge bg-primary rounded-pill">14</span>
-                                </li>
-                                <li class="list-group-item d-flex justify-content-between align-items-center">
-                                Green's, Stokes' and Divergence Theorems
-                                <span class="badge bg-primary rounded-pill">7</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Teachers -->
 
-    <section id="teachers"" class="p-5 bg-primary">
+    <section id="teachers"" class="mt-3 p-5 bg-primary">
       <div class="container">
         <h2 class="text-center text-white mb-4">Meet our Faculty</h2>
         <div class="row g-4">
@@ -522,8 +525,8 @@
     var map = new mapboxgl.Map({
     container: 'map', // container ID
     style: 'mapbox://styles/mapbox/satellite-v9', // style URL
-    center: [-2.81361, 36.77271], // starting position [lng, lat]
-    zoom: 13 // starting zoom
+    center: [80.23287, 26.5112], // starting position [lng, lat]
+    zoom: 16.5 // starting zoom
     });
      
     var layerList = document.getElementById('menu');
